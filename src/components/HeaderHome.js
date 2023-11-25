@@ -44,27 +44,7 @@ function HeaderHome({ all, show }) {
         <Image source={images.netflixTransparent} style={styles.logo} />
       </TouchableOpacity>
 
-      <View style={styles.containerMenu}>
-        {all && (
-          <React.Fragment>
-            <TouchText
-              onPress={() => navigation.navigate('TvShows')}
-              text="TV Shows"
-              textStyle={styles.text}
-            />
-            <TouchText
-              onPress={() => navigation.navigate('Movies')}
-              text="Movies"
-              textStyle={styles.text}
-            />
-            <TouchText
-              onPress={() => navigation.navigate('MyList')}
-              text="My List"
-              textStyle={styles.text}
-            />
-          </React.Fragment>
-        )}
-      </View>
+     
     </Animated.View>
   );
 }

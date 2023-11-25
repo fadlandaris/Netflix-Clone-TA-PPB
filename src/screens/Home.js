@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { useScrollToTop } from '@react-navigation/native';
@@ -46,26 +47,11 @@ function Home() {
       >
         <PromotionBanner />
 
-        <Text style={gStyle.heading}>Previews</Text>
+        <Text style={gStyle.heading}>Fadlan's Preview Film</Text>
         <ShowScroller dataset="previews" type="round" />
 
-        <Text style={gStyle.heading}>My List</Text>
+        <Text style={gStyle.heading}>Fadlan's Movie List</Text>
         <ShowScroller dataset="myList" />
-
-        <Text style={gStyle.heading}>Popular on Netflix</Text>
-        <ShowScroller />
-
-        <Text style={gStyle.heading}>Trending Now</Text>
-        <ShowScroller />
-
-        <Text style={gStyle.heading}>Watch It Again</Text>
-        <ShowScroller />
-
-        <Text style={gStyle.heading}>NETFLIX ORIGINALS</Text>
-        <ShowScroller />
-
-        <Text style={gStyle.heading}>Documentaries</Text>
-        <ShowScroller />
 
         <View style={gStyle.spacer3} />
       </ScrollView>

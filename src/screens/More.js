@@ -31,17 +31,10 @@ function More({ navigation }) {
       <HeaderAccounts />
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        <TouchLineItem
-          icon={<SvgBell />}
+         <TouchLineItem
           onPress={() => navigation.navigate('MoreNotifications')}
           showBorder
-          text="Notifications"
-        />
-        <TouchLineItem
-          icon={<SvgCheck />}
-          onPress={() => navigation.navigate('MoreMyList')}
-          showBorder
-          text="My List"
+          text="Developer Info"
         />
         <TouchLineItem
           onPress={() => navigation.navigate('MoreAppSettings')}
@@ -49,14 +42,6 @@ function More({ navigation }) {
           showBorder
           text="App Settings"
         />
-        <TouchLineItem
-          onPress={() => {
-            navigation.navigate('ModalWebView', { url: privacyUrl });
-          }}
-          showArrow={false}
-          text="Privacy"
-        />
-        <TouchLineItem onPress={() => null} showArrow={false} text="Help" />
         <TouchLineItem
           onPress={() => alertSignOut()}
           showArrow={false}

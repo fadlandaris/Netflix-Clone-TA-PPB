@@ -7,6 +7,7 @@ import StackHome from './StackHome';
 import StackSearch from './StackSearch';
 import StackDownloads from './StackDownloads';
 import StackMore from './StackMore';
+import Quotes from '../screens/Quotes';
 
 // icons
 import SvgDownloads from '../icons/Svg.Downloads';
@@ -28,11 +29,11 @@ function TabNavigation() {
 
           if (route.name === 'StackSearch') {
             icon = <SvgSearch fill={color} />;
-          } else if (route.name === 'StackDownloads') {
-            icon = <SvgDownloads fill={color} />;
+          } else if (route.name === 'Quotes') {
+            icon = <SvgMenu fill={color} />;
           } else if (route.name === 'StackMore') {
             icon = <SvgMenu fill={color} />;
-          }
+          } 
 
           return icon;
         },
@@ -47,17 +48,17 @@ function TabNavigation() {
         }}
       />
       <Tab.Screen
+        name="Quotes"
+        component={Quotes}
+        options={{
+          tabBarLabel: 'Movie List'
+        }}
+      />
+      <Tab.Screen
         name="StackSearch"
         component={StackSearch}
         options={{
           tabBarLabel: 'Search'
-        }}
-      />
-      <Tab.Screen
-        name="StackDownloads"
-        component={StackDownloads}
-        options={{
-          tabBarLabel: 'Downloads'
         }}
       />
       <Tab.Screen
